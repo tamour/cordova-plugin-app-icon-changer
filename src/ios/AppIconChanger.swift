@@ -1,6 +1,3 @@
-import Foundation
-import Cordova
-
 @objc(AppIconChanger) class AppIconChanger : CDVPlugin {
     
     // Check if the current device and iOS version support alternate icons
