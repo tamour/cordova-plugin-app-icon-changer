@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<plugin id="cordova-plugin-app-icon-changer" version="0.0.6" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+<plugin id="cordova-plugin-app-icon-changer" version="0.0.7" xmlns="http://apache.org/cordova/ns/plugins/1.0">
 	<name>App Icon Changer</name>
 	<author>Eddy Verbruggen - @EddyVerbruggen</author>
 	<description>Change the homescreen icon of your app from code.</description>
