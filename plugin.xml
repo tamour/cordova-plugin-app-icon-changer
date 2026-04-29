@@ -58,7 +58,7 @@
 			</dict>
 		</config-file>
 		
-		<hook type="after_prepare" src="scripts/ios/link-icons.js" />
+		<!--<hook type="after_prepare" src="scripts/ios/link-icons.js" />-->
 		
 		<dependency id="cordova-plugin-add-swift-support" version="^2.0.2" />
 		<source-file src="src/ios/AppIconChanger.swift" />
