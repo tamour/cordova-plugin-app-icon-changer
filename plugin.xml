@@ -1,65 +1,63 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<plugin
-    id="cordova-plugin-app-icon-changer"
-    version="0.0.4"
-    xmlns="http://apache.org/cordova/ns/plugins/1.0">
-
-  <name>App Icon Changer</name>
-  <author>Eddy Verbruggen - @EddyVerbruggen</author>
-  <description>Change the homescreen icon of your app from code.</description>
-
-  <keywords>Icon Changer, Home icon, icon</keywords>
-
-  <license>MIT</license>
-
-  <js-module name="AppIconChanger" src="www/AppIconChanger.js">
-    <clobbers target="AppIconChanger"/>
-  </js-module>
-
-  <platform name="ios">
-    <config-file parent="/*" target="config.xml">
-      <feature name="AppIconChanger">
-        <param name="ios-package" value="AppIconChanger"/>
-      </feature>
-    </config-file>
-
-<config-file parent="CFBundleIcons" target="*-Info.plist">
-        <dict>
-            <key>CFBundleAlternateIcons</key>
-            <dict>
-                <key>SwitcherOne</key>
-                <dict>
-                    <key>CFBundleIconFiles</key>
-                    <array>
-                        <string>icon-switcher1-60</string>
-                    </array>
-                    <key>UIPrerenderedIcon</key>
-                    <true/>
-                </dict>
-                <key>SwitcherTwo</key>
-                <dict>
-                    <key>CFBundleIconFiles</key>
-                    <array>
-                        <string>icon-switcher2-60</string>
-                    </array>
-                    <key>UIPrerenderedIcon</key>
-                    <true/>
-                </dict>
-                <key>SwitcherThree</key>
-                <dict>
-                    <key>CFBundleIconFiles</key>
-                    <array>
-                        <string>icon-switcher3-60</string>
-                    </array>
-                    <key>UIPrerenderedIcon</key>
-                    <true/>
-                </dict>
-            </dict>
-        </dict>
-    </config-file>
-      
-    <dependency id="cordova-plugin-add-swift-support" version="^2.0.2" />
-    <source-file src="src/ios/AppIconChanger.swift" />
-  </platform>
-
+<plugin id="cordova-plugin-app-icon-changer" version="0.0.5" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+	<name>App Icon Changer</name>
+	<author>Eddy Verbruggen - @EddyVerbruggen</author>
+	<description>Change the homescreen icon of your app from code.</description>
+	<keywords>Icon Changer, Home icon, icon</keywords>
+	<license>MIT</license>
+	<js-module name="AppIconChanger" src="www/AppIconChanger.js">
+		<clobbers target="AppIconChanger"/>
+	</js-module>
+	<platform name="ios">
+		<config-file parent="/*" target="config.xml">
+			<feature name="AppIconChanger">
+				<param name="ios-package" value="AppIconChanger"/>
+			</feature>
+		</config-file>
+		<resource-file src="icon-switcher1-60.png" />
+		<resource-file src="icon-switcher1-60@2x.png" />
+		<resource-file src="icon-switcher1-60@3x.png" />
+		<resource-file src="icon-switcher2-60.png" />
+		<resource-file src="icon-switcher2-60@2x.png" />
+		<resource-file src="icon-switcher2-60@3x.png" />
+		<resource-file src="icon-switcher3-60.png" />
+		<resource-file src="icon-switcher3-60@2x.png" />
+		<resource-file src="icon-switcher3-60@3x.png" />
+		<config-file parent="CFBundleIcons" target="*-Info.plist">
+			<dict>
+				<key>CFBundleAlternateIcons</key>
+				<dict>
+					<key>SwitcherOne</key>
+					<dict>
+						<key>CFBundleIconFiles</key>
+						<array>
+							<string>icon-switcher1-60</string>
+						</array>
+						<key>UIPrerenderedIcon</key>
+						<true/>
+					</dict>
+					<key>SwitcherTwo</key>
+					<dict>
+						<key>CFBundleIconFiles</key>
+						<array>
+							<string>icon-switcher2-60</string>
+						</array>
+						<key>UIPrerenderedIcon</key>
+						<true/>
+					</dict>
+					<key>SwitcherThree</key>
+					<dict>
+						<key>CFBundleIconFiles</key>
+						<array>
+							<string>icon-switcher3-60</string>
+						</array>
+						<key>UIPrerenderedIcon</key>
+						<true/>
+					</dict>
+				</dict>
+			</dict>
+		</config-file>
+		<dependency id="cordova-plugin-add-swift-support" version="^2.0.2" />
+		<source-file src="src/ios/AppIconChanger.swift" />
+	</platform>
 </plugin>
