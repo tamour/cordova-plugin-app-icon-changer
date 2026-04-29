@@ -29,8 +29,8 @@
       </feature>
     </config-file>
 
-    <header-file src="src/ios/AppIconChanger.h"/>
-    <source-file src="src/ios/AppIconChanger.m"/>
+    <source-file src="src/ios/AppIconChanger.swift" />
+    <dependency id="cordova-plugin-add-swift-support" version="^2.0.2" />
   </platform>
 
 </plugin>
