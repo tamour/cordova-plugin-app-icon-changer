@@ -1,22 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <plugin
     id="cordova-plugin-app-icon-changer"
-    version="1.0.0"
+    version="0.0.2"
     xmlns="http://apache.org/cordova/ns/plugins/1.0">
 
   <name>App Icon Changer</name>
-
   <author>Eddy Verbruggen - @EddyVerbruggen</author>
-
   <description>Change the homescreen icon of your app from code.</description>
 
   <keywords>Icon Changer, Home icon, icon</keywords>
 
   <license>MIT</license>
-
-  <engines>
-    <engine name="cordova" version=">=3.5.0"/>
-  </engines>
 
   <js-module name="AppIconChanger" src="www/AppIconChanger.js">
     <clobbers target="AppIconChanger"/>
@@ -29,8 +23,8 @@
       </feature>
     </config-file>
 
-    <source-file src="src/ios/AppIconChanger.swift" />
     <dependency id="cordova-plugin-add-swift-support" version="^2.0.2" />
+    <source-file src="src/ios/AppIconChanger.swift" />
   </platform>
 
 </plugin>
