@@ -14,7 +14,7 @@
 				<param name="ios-package" value="AppIconChanger"/>
 			</feature>
 		</config-file>
-		<resource-file src="icon-switcher1-60.png" />
+		<!--<resource-file src="icon-switcher1-60.png" />
 		<resource-file src="icon-switcher1-60@2x.png" />
 		<resource-file src="icon-switcher1-60@3x.png" />
 		<resource-file src="icon-switcher2-60.png" />
@@ -22,7 +22,7 @@
 		<resource-file src="icon-switcher2-60@3x.png" />
 		<resource-file src="icon-switcher3-60.png" />
 		<resource-file src="icon-switcher3-60@2x.png" />
-		<resource-file src="icon-switcher3-60@3x.png" />
+		<resource-file src="icon-switcher3-60@3x.png" /> -->
 		<config-file parent="CFBundleIcons" target="*-Info.plist">
 			<dict>
 				<key>CFBundleAlternateIcons</key>
